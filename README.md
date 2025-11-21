@@ -28,6 +28,20 @@ When working with multi-modal rodent brain imaging, you often have:
 
 ## Installation
 
+### Using uv (recommended)
+
+```bash
+cd rbsync
+
+# Install dependencies and create virtual environment
+uv sync
+
+# Activate the virtual environment
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+```
+
+### Using pip
+
 ```bash
 cd rbsync
 
@@ -44,7 +58,11 @@ pip install -r requirements.txt
 ### Quick Start
 
 ```bash
-python app.py
+# Using the installed command
+rbsync
+
+# Or directly with Python
+python -m rbsync.app
 ```
 
 ### Workflow
